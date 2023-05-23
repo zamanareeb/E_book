@@ -130,76 +130,76 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                     }
                 ),
               ),
-              Expanded(
-                  child: NestedScrollView(
-                    controller: _scrollController,
-                    headerSliverBuilder: (BuildContext context, bool isScroll){
-                      return[
-                        SliverAppBar(
-                          pinned: true,
-                          backgroundColor: Colors.white,
-                          bottom: PreferredSize(
-                            preferredSize: const Size.fromHeight(50),
-                            child: Container(
-                              margin: const EdgeInsets.only(bottom: 20, left: 20),
-                              child: TabBar(
-                                indicatorPadding: const EdgeInsets.all(0),
-                                indicatorSize: TabBarIndicatorSize.label,
-                                labelPadding: const EdgeInsets.only(right: 10),
-                                controller: _tabController,
-                                isScrollable: true,
-                                indicator: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      blurRadius: 7,
-                                      offset: const Offset(0,0)
-                                    )
-                                  ]
-                                ),
-                                tabs: const [
-                                  AppTabs(color: Colors.yellow, label: 'New'),
-                                  AppTabs(color: Colors.red, label: 'Trending'),
-                                  AppTabs(color: Colors.lightBlueAccent, label: 'Popular'),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ];
-                    },
-                    body: TabBarView(
-                      controller: _tabController,
-                      children: const [
-                        Material(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: Colors.grey,
-                            ),
-                            title: Text('Content in new tab'),
-                          ),
-                        ),
-                        Material(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: Colors.grey,
-                            ),
-                            title: Text('Content in trending tab'),
-                          ),
-                        ),
-                        Material(
-                          child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor: Colors.grey,
-                            ),
-                            title: Text('Content in popular tab'),
-                          ),
-                        )
-                      ],
-                    ),
-                  )
-              )
+              // Expanded(
+              //     child: NestedScrollView(
+              //       controller: _scrollController,
+              //       headerSliverBuilder: (BuildContext context, bool isScroll){
+              //         return[
+              //           SliverAppBar(
+              //             pinned: true,
+              //             backgroundColor: Colors.white,
+              //             bottom: PreferredSize(
+              //               preferredSize: const Size.fromHeight(50),
+              //               child: Container(
+              //                 margin: const EdgeInsets.only(bottom: 20, left: 20),
+              //                 child: TabBar(
+              //                   indicatorPadding: const EdgeInsets.all(0),
+              //                   indicatorSize: TabBarIndicatorSize.label,
+              //                   labelPadding: const EdgeInsets.only(right: 10),
+              //                   controller: _tabController,
+              //                   isScrollable: true,
+              //                   indicator: BoxDecoration(
+              //                     borderRadius: BorderRadius.circular(10),
+              //                     boxShadow: [
+              //                       BoxShadow(
+              //                         color: Colors.grey.withOpacity(0.2),
+              //                         blurRadius: 7,
+              //                         offset: const Offset(0,0)
+              //                       )
+              //                     ]
+              //                   ),
+              //                   tabs: const [
+              //                     AppTabs(color: Colors.yellow, label: 'New'),
+              //                     AppTabs(color: Colors.red, label: 'Trending'),
+              //                     AppTabs(color: Colors.lightBlueAccent, label: 'Popular'),
+              //                   ],
+              //                 ),
+              //               ),
+              //             ),
+              //           ),
+              //         ];
+              //       },
+              //       body: TabBarView(
+              //         controller: _tabController,
+              //         children: const [
+              //           Material(
+              //             child: ListTile(
+              //               leading: CircleAvatar(
+              //                 backgroundColor: Colors.grey,
+              //               ),
+              //               title: Text('Content in new tab'),
+              //             ),
+              //           ),
+              //           Material(
+              //             child: ListTile(
+              //               leading: CircleAvatar(
+              //                 backgroundColor: Colors.grey,
+              //               ),
+              //               title: Text('Content in trending tab'),
+              //             ),
+              //           ),
+              //           Material(
+              //             child: ListTile(
+              //               leading: CircleAvatar(
+              //                 backgroundColor: Colors.grey,
+              //               ),
+              //               title: Text('Content in popular tab'),
+              //             ),
+              //           )
+              //         ],
+              //       ),
+              //     )
+              // )
               ,
               Container(
                 margin: const EdgeInsets.only(left: 20, top: 8, bottom: 8),
