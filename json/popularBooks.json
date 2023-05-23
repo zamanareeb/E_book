@@ -1,0 +1,26 @@
+[
+  {
+    "rating": "3.9",
+    "title": "A SWEET MESS",
+    "writer": "Jayci Lee",
+    "img": "img/a_sweet_mess.png",
+    "audio": "",
+    "genre": "Love"
+  },
+  {
+    "rating": "3.8",
+    "title": "BREAK IN CASE OF EMERGENCY",
+    "writer": "Brian Francis",
+    "img": "img/break_in_case_of_emergency.png",
+    "audio": "",
+    "genre": "Heartbreak"
+  },
+  {
+    "rating": "4.3",
+    "title": "SEVEN DAYS IN JUNE",
+    "writer": "Tia Williams",
+    "img": "img/seven_days_in_june.png",
+    "audio": "",
+    "genre": "Romance"
+  }
+]
